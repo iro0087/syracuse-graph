@@ -245,10 +245,10 @@ Button(win, text="COMMENCER", command=syracuse, bg="yellow").pack()
 
 n2 = Entry(win, width=5)
 
-nom = Label(win, text="Larget-Piet", font=('Calibri 15'), bg="blue", fg="#2F2B40")
+nom = Label(win, text="", font=('Calibri 15'), bg="blue", fg="#2F2B40")
 nom.pack()
 
-nom2 = Label(win, text="Julien", font=('Calibri 15'), bg="blue", fg="#2F2B40")
+nom2 = Label(win, text="", font=('Calibri 15'), bg="blue", fg="#2F2B40")
 nom2.pack()
 
 win.mainloop()
