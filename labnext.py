@@ -221,27 +221,27 @@ def syracuse():
     plt.plot([t, t + 1], [valeurdefin, valeurdefin], "k--", label="Valeur de fin choisie")
     plt.plot([t, t + 1], [[volvaldebut], [volvaldebut]], "r--", label="Valeur de départ")
     plt.plot([t, t + 1], [listgraphy[t2], valeurdefin], "b", marker="*", label="Valeurs de la suite")
-    plt.title("Visualisation de la suite de Syracuse")
-    plt.xlabel("Numéro d'opération")
-    plt.ylabel("Valeur de la suite")
+    plt.title("Syracuse conjecture")
+    plt.xlabel("Number of calculation")
+    plt.ylabel("output")
     plt.legend()
     plt.show()
     plt.close()
 
-Label(win, text="Veuillez choisir un vol de départ (3 est le minimum)", font=('Calibri 20'), bg="blue",
+Label(win, text="first Number (positive integrer)", font=('Calibri 20'), bg="blue",
       fg="white").pack()
 a2 = Entry(win, width=5)
 a2.pack()
-Label(win, text="Choisissez votre valeur de fin entre 1 ; 2 ou 4", font=('Calibri 20'), bg="blue", fg="white").pack()
+Label(win, text="End value (1; 2 or 4)", font=('Calibri 20'), bg="blue", fg="white").pack()
 b2 = Entry(win, width=5)
 b2.pack()
-Label(win, text="Quelle couleur de fond?",
+Label(win, text="Background graph color",
       font=('Calibri 20'), bg="blue", fg="white").pack()
 c2 = Entry(win, width=5)
 c2.pack()
 
 
-Button(win, text="COMMENCER", command=syracuse, bg="yellow").pack()
+Button(win, text="PROCEED", command=syracuse, bg="yellow").pack()
 
 n2 = Entry(win, width=5)
 
